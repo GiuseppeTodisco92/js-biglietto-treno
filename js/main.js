@@ -47,6 +47,9 @@ if (age < 18) {
     'per gli over 65 abbiamo applicato uno sconto del 40% ! pari a : ' +
     sale.toFixed(2) +
     '€';
+} else if (age >= 18 || age <= 65) {
+  document.getElementById('discountedprice').innerHTML =
+    'Non ti facciamo nessuno sconto .... VAI A LAVORARE !';
 }
 
 document.getElementById('totalprice').innerHTML =
