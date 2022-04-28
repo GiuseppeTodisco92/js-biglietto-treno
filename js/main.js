@@ -31,16 +31,17 @@ document.getElementById('initialprice').innerHTML =
   'prezzo iniziale : ' + ticketPrice.toFixed(2) + '€';
 
 //4. SE minorenni applicare il 20% di sconto SE over 65 applicare il 40%
+let sale = 0;
 if (age < 18) {
-  let sale = (ticketPrice * 20) / 100;
+  sale = (ticketPrice * 20) / 100;
   ticketPrice = ticketPrice - sale;
   console.log(ticketPrice.toFixed(2));
   document.getElementById('discountedprice').innerHTML =
     'per i minori di 18 anni abbiamo applicato uno sconto del 20% ! pari a : ' +
     sale.toFixed(2) +
     '€';
-} else if (age > 65) {
-  let sale = (ticketPrice * 40) / 100;
+} else if (age >= 65) {
+  sale = (ticketPrice * 40) / 100;
   ticketPrice = ticketPrice - sale;
   console.log(ticketPrice.toFixed(2));
   document.getElementById('discountedprice').innerHTML =
