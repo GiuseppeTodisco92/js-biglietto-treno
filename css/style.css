@@ -31,3 +31,10 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
+
+.discounted_style {
+    color: red;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}
