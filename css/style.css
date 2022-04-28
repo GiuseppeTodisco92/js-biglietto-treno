@@ -1,0 +1,33 @@
+body{
+    background-image: url(../img/trenitalia_hero_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container_custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.box_data {
+    width: 70%;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 100px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.box_data h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.price_style {
+    font-size: 30px;
+    font-weight: bold;
+}
